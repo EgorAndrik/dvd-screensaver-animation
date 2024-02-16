@@ -14,7 +14,7 @@ public class Panel extends JPanel {
 
     public Panel() throws IOException {
         setPreferredSize(new Dimension(800, 500));
-        setBackground(Color.WHITE);
+        setBackground(Color.BLACK);
 
         Timer timer = new Timer(20, new ActionListener() {
             @Override
