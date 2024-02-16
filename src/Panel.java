@@ -10,7 +10,9 @@ import java.io.IOException;
 public class Panel extends JPanel {
     private int x = 0, y = 10, xSpeed = 2, ySpeed = 4, width = 100, height = 100;
     private final BufferedImage dvdPictur = ImageIO.read(new File("src/dvd-logo-icon-download-icons-20.png"));
-    private JLabel dvd = new JLabel(new ImageIcon(dvdPictur.getScaledInstance(width, height, BufferedImage.SCALE_SMOOTH)));
+    private JLabel dvd = new JLabel(
+            new ImageIcon(dvdPictur.getScaledInstance(width, height, BufferedImage.SCALE_SMOOTH))
+    );
 
     public Panel() throws IOException {
         setPreferredSize(new Dimension(800, 500));
@@ -53,8 +55,6 @@ public class Panel extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         dvd.setSize(width, height);
-//        dvd.setBackground(Color.CYAN);
-//        dvd.setOpaque(true);
         dvd.setLocation(x, y);
         add(dvd);
     }
