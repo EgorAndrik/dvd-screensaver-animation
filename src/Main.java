@@ -4,8 +4,6 @@ import java.io.IOException;
 public class Main {
     public static void creatProgect() throws IOException {
         JFrame wind = new JFrame("DVD animation");
-//        wind.setSize(800, 500);
-//        wind.setResizable(false);
         wind.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         wind.setContentPane(new Panel());
         wind.pack();
